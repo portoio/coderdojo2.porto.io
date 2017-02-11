@@ -1,0 +1,29 @@
+.dojo-logo {
+  vertical-align: middle;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.parallax-image {
+  height: 900px;
+}
+
+#first {
+  width: 100%;
+  padding: 0px;
+  background-image: url("../img/test_background.jpg");
+  background-position: center;
+  margin-top: -32px;
+}
+
+.category {
+  height: 100%;
+  text-align: center;
+}
+
+/*body {
+  background-image: url('../img/test_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}*/
