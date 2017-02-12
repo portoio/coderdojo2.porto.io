@@ -1,11 +1,16 @@
+html, body{
+	height: 100%;
+}
+
 .dojo-logo {
   vertical-align: middle;
   margin-top: 4px;
   margin-left: 10px;
 }
 
-.parallax-image {
-  height: 900px;
+nav ul a{
+	font-size: 17px;
+	padding: 0 25px;
 }
 
 #first {
@@ -13,12 +18,21 @@
   padding: 0px;
   background-image: url("../img/test_background.jpg");
   background-position: center;
-  margin-top: -32px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
 }
 
 .category {
   height: 100%;
   text-align: center;
+}
+
+.inicial_page{
+	min-height: 100%;
+	position: relative;
+	margin-top: -64px;
 }
 
 /*body {
