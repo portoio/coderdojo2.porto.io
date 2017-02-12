@@ -3,9 +3,7 @@ html, body{
 }
 
 .dojo-logo {
-  vertical-align: middle;
   margin-top: 4px;
-  margin-left: 10px;
 }
 
 nav ul a{
@@ -13,18 +11,20 @@ nav ul a{
 	padding: 0 25px;
 }
 
-#first {
+#index {
+  min-height: 100%;
+  position: relative;
   width: 100%;
   padding: 0px;
   background-image: url("../img/test_background.jpg");
   background-position: center;
   top: 0;
   left: 0;
-  position: absolute;
-  height: 100%;
+  margin-top: -35px;
 }
 
 .category {
+  padding-top: 35px;
   height: 100%;
   text-align: center;
 }
@@ -32,7 +32,7 @@ nav ul a{
 .inicial_page{
 	min-height: 100%;
 	position: relative;
-	margin-top: -64px;
+
 }
 
 /*body {

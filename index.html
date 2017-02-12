@@ -8,30 +8,40 @@
 <body>
 
  <!--Navbar-->
-  <div class="navbar-fixed">
+  <div class="navbar-fixed" id="top">
     <nav>
       <div class="nav-wrapper cyan lighten-2">
-        <a href="#" class="brand-logo center">
+        <a onClick="scrollTo(0)" href="#" class="center brand-logo">
           <img src="img/logo.svg" height="60px" class="dojo-logo" />
         </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#photos">Sessões Anteriores</a></li>
+          <li><a onClick="scrollTo(1)" href="#about">Sobre Nós</a></li>
+          <li><a onClick="scrollTo(2)" href="#photos">Sessões Anteriores</a></li>
         </ul>
         <ul id="nav-mobile2" class="right hide-on-med-and-down">
-          <li><a href="#porto.io">Espaço</a></li>
-          <li><a href="#contact">Contactos</a></li>
+          <li><a onClick="scrollTo(3)" href="#portoio">Espaço</a></li>
+          <li><a onClick="scrollTo(4)" href="#contact">Contactos</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  
+
   <!-- BODY -->
-<section class="inicial_page">
-  <div class="category" id="first"></div>
-</section>
-  <div class="category" id="second">
-    <h1>2</h1>
+  <!-- background-color used for testing purposes -->
+  <div class="category" id="index">
+    <h1>1</h1>
+  </div>
+  <div class="category" id="about" style="background-color: blue">
+    <h1>Sobre Nós</h1>
+  </div>
+  <div class="category" id="photos" style="background-color: red">
+    <h1>Sessões Anteriores</h1>
+  </div>
+  <div class="category" id="portoio"style="background-color: green">
+    <h1>Espaço</h1>
+  </div>
+  <div class="category" id="contact" style="background-color: yellow">
+    <h1>Contactos</h1>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/custom.js" charset="utf-8"></script>
