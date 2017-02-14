@@ -4,6 +4,7 @@
   <title>CoderDojo - Porto</title>
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Icons -->
 </head>
 <body>
 
@@ -29,7 +30,8 @@
   <!-- BODY -->
   <!-- background-color used for testing purposes -->
   <div class="category" id="index">
-    <h1>1</h1>
+    <img src="img/logo_text.svg" class="dojo-text-logo" />
+    <h5 class="slogan">Colocar aqui um slogan</h5>
   </div>
   <div class="category" id="about" style="background-color: blue">
     <h1>Sobre Nós</h1>
@@ -43,6 +45,15 @@
   <div class="category" id="contact" style="background-color: yellow">
     <h1>Contactos</h1>
   </div>
+
+  <div class="fixed-action-btn" onClick="scrollTo(1)" href="#about">
+    <a class="btn-floating btn-large waves-effect waves-light red lighten-1">
+      <i class="large material-icons">keyboard_arrow_down</i>
+    </a>
+  </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/custom.js" charset="utf-8"></script>
 </body>

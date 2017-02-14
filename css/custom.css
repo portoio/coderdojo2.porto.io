@@ -6,6 +6,12 @@ html, body{
   margin-top: 4px;
 }
 
+.dojo-text-logo {
+  margin-top: 7%;
+  height: 65%;
+  width: 60%;
+}
+
 nav ul a{
 	font-size: 17px;
 	padding: 0 25px;
@@ -16,7 +22,12 @@ nav ul a{
   position: relative;
   width: 100%;
   padding: 0px;
-  background-image: url("../img/test_background.jpg");
+  background:
+    linear-gradient(
+      rgba(76, 207, 224, 0.45),
+      rgba(76, 207, 224, 0.45)
+    ),
+    url("../img/test_background.jpg");
   background-position: center;
   top: 0;
   left: 0;
@@ -32,7 +43,6 @@ nav ul a{
 .inicial_page{
 	min-height: 100%;
 	position: relative;
-
 }
 
 /*body {
