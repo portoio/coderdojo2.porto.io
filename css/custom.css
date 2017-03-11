@@ -1,25 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 html, body{
 	height: 100%;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .dojo-logo {
   margin-top: 4px;
 }
 
-.dojo-text-logo {
-  margin-top: 7%;
-  height: 65%;
-  width: 60%;
-}
-
 nav ul a{
 	font-size: 17px;
 	padding: 0 25px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #index {
   min-height: 100%;
-  position: relative;
   width: 100%;
   padding: 0px;
   background:
@@ -31,23 +30,126 @@ nav ul a{
   background-position: center;
   top: 0;
   left: 0;
-  margin-top: -35px;
+  margin-top: -64px; 
 }
 
-.category {
-  padding-top: 35px;
-  height: 100%;
+#section_about{
+	background-color: #21C8CE;
+	padding: 20px 0;
+}
+
+.category{
+	height: 100%;
+	text-align: center;
+}
+
+.logo_and_slogan {
+  position: relative;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.inicial_page{
-	min-height: 100%;
-	position: relative;
+.dojo-text-logo{
+	height: 600px;
 }
 
-/*body {
-  background-image: url('../img/test_background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}*/
+.text_slogan{
+	margin-top: 0.68rem;
+}
+
+.title{
+	margin-top: 0;
+	padding-top: 94px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.second_title{
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 55px;
+}
+
+.sub_title{
+	margin-top: 0;
+}
+
+.text{
+	font-size: 18px;
+}
+
+.justify{
+	text-align: justify;
+}
+
+.circle{
+	border-radius: 100% !important;
+	webkit-border-radius: 100% !important;
+   	moz-border-radius: 100% !important;
+}
+
+.icon{
+	background-color: #FFF;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+i.medium{
+	font-size: 53px;
+}
+
+i{
+	color: #21C8CE;
+}
+
+/*Properties for the logo*/
+
+@media (max-height: 825px){
+	.dojo-text-logo{
+		height: 525px;
+	}
+	
+	.logo_and_slogan{
+		top: 52%;
+	}
+}
+
+@media (max-height: 725px){
+	.dojo-text-logo{
+		height: 425px;
+	}
+	
+	.logo_and_slogan{
+		top: 53%;
+	}
+}
+
+@media (max-height: 625px){
+	.dojo-text-logo{
+		height: 325px;
+	}
+	
+	.logo_and_slogan{
+		top: 54%;
+	}
+	
+	.text_slogan{
+		font-size: 1.46rem;
+	}
+}
+
+@media (max-height: 525px){
+	.dojo-text-logo{
+		height: 225px;
+	}
+	
+	.logo_and_slogan{
+		top: 55%;
+	}
+	
+	.text_slogan{
+		font-size: 1.23rem;
+	}
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>CoderDojo - Porto</title>
@@ -12,48 +13,90 @@
   <div class="navbar-fixed" id="top">
     <nav>
       <div class="nav-wrapper cyan lighten-2">
-        <a onClick="scrollTo(0)" href="#" class="center brand-logo">
-          <img src="img/logo.svg" height="60px" class="dojo-logo" />
+        <a href="#index" class="center brand-logo">
+          <img src="img/logo.svg" height="60px" class="dojo-logo"/>
         </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a onClick="scrollTo(1)" href="#about">Sobre Nós</a></li>
-          <li><a onClick="scrollTo(2)" href="#photos">Sessões Anteriores</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#photos">Sessões Anteriores</a></li>
         </ul>
         <ul id="nav-mobile2" class="right hide-on-med-and-down">
-          <li><a onClick="scrollTo(3)" href="#portoio">Espaço</a></li>
-          <li><a onClick="scrollTo(4)" href="#contact">Contactos</a></li>
+          <li><a href="#portoio">Espaço</a></li>
+          <li><a href="#contact">Contactos</a></li>
         </ul>
       </div>
     </nav>
   </div>
-
-  <!-- BODY -->
-  <!-- background-color used for testing purposes -->
-  <div class="category" id="index">
-    <img src="img/logo_text.svg" class="dojo-text-logo" />
-    <h5 class="slogan">Colocar aqui um slogan</h5>
-  </div>
-  <div class="category" id="about" style="background-color: blue">
-    <h1>Sobre Nós</h1>
-  </div>
-  <div class="category" id="photos" style="background-color: red">
-    <h1>Sessões Anteriores</h1>
-  </div>
-  <div class="category" id="portoio"style="background-color: green">
-    <h1>Espaço</h1>
-  </div>
-  <div class="category" id="contact" style="background-color: yellow">
-    <h1>Contactos</h1>
-  </div>
-
-  <div class="fixed-action-btn" onClick="scrollTo(1)" href="#about">
-    <a class="btn-floating btn-large waves-effect waves-light red lighten-1">
-      <i class="large material-icons">keyboard_arrow_down</i>
-    </a>
-  </div>
-
-
+ <!--End Navbar-->
+ 
+ <!--Index/Home Part-->
+ <section id="index" class="category">
+	 <div class="logo_and_slogan">
+	   <img src="img/logo_text.svg" class="dojo-text-logo"/>
+	  <h5 class="text_slogan">Colocar slogan aqui</h5>
+	 </div>
+ </section>
+ 
+ <!--About Part-->
+ <section id="section_about" class="center">
+    <h1 class="title" id="about">Sobre Nós</h1>
+    <div class="container">
+    	<p class="text" style="margin-bottom: 85px;">O CoderDojo é um movimento global que tem como conceito a integração dos jovens com a tecnologia através do ensino gratuito para crianças e adolescentes entre os 7 e os 17 anos. Todo o plano de ensino é pensado de modo a abordar o básico da programação, trabalhando para despertar o interesse e vontade de quem quer aprender e captar conhecimentos na área tecnológica. Mais que qualquer outra coisa, é um evento de família que pretende unir crianças e pais e relacioná-los com a tecnologia. A edição do Porto acontece uma vez por mês, sempre no Porto i/o.</p>
+	</div>
+  	<h2 class="second_title">E o que vais aprender?</h2>
+   	<div class="container">
+    	<div class="row">
+    		<div class="col m6 s12">
+    			<span class="circle icon">
+					<i class="medium material-icons" style="margin-top: 8.5px; margin-left: 0.5px;">code</i>
+  				</span>
+   				<h5 class="sub_title">Programar</h5>
+   				<p class="text">No CDP vais aprender a programar com algumas ferramentas perfeitas para quem está a começar. Não, no início não vais criar o melhor site do mundo mas garantimos que vais aprender quais as melhores ferramentas e raciocínios para que no futuro consigas evoluir e fazer acontecer.</p>
+    		</div>
+    		<div class="col m6 s12">
+    			<div class="circle icon">
+    				<i class="medium material-icons" style="margin-top: 8.5px; margin-left: 1px;">settings</i>
+    			</div>
+    			<h5 class="sub_title">Começar com a Tecnologia</h5>
+    			<p class="text">A forma de começar é simples mas atenção, vais utilizar tecnologias que os mais reconhecidos developers utilizaram, que o diga o Zuckerberg!</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col m6 s12">
+				<div class="circle icon">
+					<i class="medium material-icons" style="margin-top: 7px; margin-left: 4px;">extension</i>
+				</div>
+    			<h5 class="sub_title">Fazer Jogos</h5>
+    			<p class="text">Os jogos são uma parte integrante do desenvolvimento. A lógica é começar por algo bastante simples que te permita compreender o raciocínio e daí evoluir. Nunca o conceito ‘aprender jogando’ fez tanto sentido.</p>
+    		</div>
+    		<div class="col m6 s12">
+    			<div class="circle icon">
+    				<i class="medium material-icons" style="margin-top: 8.5px;">sentiment_very_satisfied</i>
+    			</div>
+    			<h5 class="sub_title">Ensinar e Conhecer outros</h5>
+    			<p class="text">Para além da aprendizagem, começarás a conhecer jovens como tu que têm os mesmos interesses e que se podem tornar nos companheiros perfeitos para trocar experiências e ajuda. Este é também um espaço onde podes fazer amigos.</p>
+    		</div>
+    	</div>    	
+    </div>
+ </section>
+ 
+ <!--Photos Part-->
+ <section id="photos" class="category" style="background-color: darkgreen;">
+ 	<h1 class="title">Sessões Anteriores</h1>
+ </section>
+ 
+ <!--Portoio Part-->
+ <section id="portoio" class="category" style="background-color: skyblue;">
+ 	<h1 class="title">Espaço</h1>
+ </section>
+ 
+ <!--Portoio Part-->
+ <section id="contact" class="category" style="background-color: darkgoldenrod;">
+ 	<h1 class="title">Contactos</h1>
+ </section>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/custom.js" charset="utf-8"></script>
 </body>
+</html>
