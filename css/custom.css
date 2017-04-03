@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
 	font-family: Roboto;
 	src:url('../fonts/roboto/Roboto-Regular.woff');
@@ -12,6 +13,14 @@
 html, body{
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	background:
+		linear-gradient(
+			rgba(76, 207, 224, 0.45),
+			rgba(76, 207, 224, 0.45)
+		),
+		url("../img/test_background.jpg");
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .dojo-logo {
@@ -28,24 +37,18 @@ nav ul a{
   min-height: 100%;
   width: 100%;
   padding: 0px;
-  background:
-    linear-gradient(
-      rgba(76, 207, 224, 0.45),
-      rgba(76, 207, 224, 0.45)
-    ),
-    url("../img/test_background.jpg");
-  background-position: center;
   top: 0;
   left: 0;
   margin-top: -64px;
 }
 
 #section_about{
-	background-color: #21C8CE;
+	background-color: rgba(2, 15, 28, 0.3);
 	padding: 20px 0;
 }
 
 .category{
+	background-color: rgba(2, 15, 28, 0.3);
 	height: 100%;
 	text-align: center;
 }
@@ -71,27 +74,38 @@ nav ul a{
 	padding-top: 94px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+	color: #fff;
 }
 
 .second_title{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	margin-bottom: 55px;
+	color: #fff;
 }
 
 .sub_title{
 	margin-top: 0;
+	color: #fff;
 }
 
 .text{
 	margin-top: -4px;
 	font-size: 18px;
 	font-family: 'Open Sans';
+	color: #fff;
+}
+
+.text_link{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #fff;
 }
 
 .intro_text {
 	font-size: 20px;
 	font-family: 'Roboto';
+	color: #fff;
 }
 
 .justify{
@@ -181,6 +195,7 @@ i{
 	font-family: monospace;
 	text-align: center;
 	text-decoration: underline;
+	color: #fff;
 }
 
 .typed-cursor {

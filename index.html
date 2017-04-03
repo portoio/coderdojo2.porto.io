@@ -13,16 +13,16 @@
   <div class="navbar-fixed" id="top">
     <nav>
       <div class="nav-wrapper cyan lighten-2">
-        <a href="#index" class="center brand-logo">
+        <a href="#index" onclick="scrollTo('index')" class="center brand-logo">
           <img src="img/logo.svg" height="60px" class="dojo-logo"/>
         </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#photos">Sessões Anteriores</a></li>
+          <li><a href="#about" onclick="scrollTo('about')">Sobre Nós</a></li>
+          <li><a href="#photos" onclick="scrollTo('photos')">Sessões Anteriores</a></li>
         </ul>
         <ul id="nav-mobile2" class="right hide-on-med-and-down">
-          <li><a href="#portoio">Espaço e Organizadores</a></li>
-          <li><a href="#contact">Contactos</a></li>
+          <li><a href="#portoio" onclick="scrollTo('portoio')">Espaço e Organizadores</a></li>
+          <li><a href="#contact" onclick="scrollTo('contact')">Contactos</a></li>
         </ul>
       </div>
     </nav>
@@ -44,12 +44,12 @@
       <h1 class="title" id="about">Mas o que é o Coderdojo?</h1>
       <div class="container">
         <br />
-        <p class="intro_text">Em poucas palavras (ou 150 carateres):</p>
+        <p class="intro_text">Em poucas palavras:</p>
         <div class="small_description"></div>
         <br />
         <br />
         <p class="intro_text">De uma forma mais completa:</p>
-        <p class="justify text" style="margin-bottom: 85px;">O CoderDojo é um movimento global que tem como principal conceito a integração dos jovens com a tecnologia, através do ensino gratuito para crianças e adolescentes entre os 7 e os 17 anos. Todo o plano de ensino é pensado de modo a abordar o básico da programação, trabalhando para despertar o interesse e vontade de quem quer aprender e captar conhecimentos na área tecnológica. O evento em si é organizado por voluntários com fortes conhecimentos na área de informática, sendo assim os principais auxiliares na progressão e esclarecimento de dúvidas dos jovens. Para além disso, o CoderDojo é um evento de família, pretendendo assim unir crianças e pais ao relacioná-los com a tecnologia. A edição do Porto acontece uma vez por mês, sempre no <a href="http://porto.io/">Porto i/o</a>.</p>
+        <p class="justify text" style="margin-bottom: 85px;">O CoderDojo é um movimento global que tem como principal conceito a integração dos jovens com a tecnologia, através do ensino gratuito para crianças e adolescentes entre os 7 e os 17 anos. Todo o plano de ensino é pensado de modo a abordar o básico da programação, trabalhando para despertar o interesse e vontade de quem quer aprender e captar conhecimentos na área tecnológica. O evento em si é organizado por voluntários com fortes conhecimentos na área de informática, sendo assim os principais auxiliares na progressão e esclarecimento de dúvidas dos jovens. Para além disso, o CoderDojo é um evento de família, pretendendo assim unir crianças e pais ao relacioná-los com a tecnologia. A edição do Porto acontece uma vez por mês, sempre no <a class="text_link" href="http://porto.io/">Porto i/o</a>.</p>
   	</div>
     </div>
 
@@ -84,7 +84,7 @@
               </div>
               <div class="col s9 justify">
                 <h5 class="sub_title">Fazer Jogos</h5>
-          	  <p class="text">Nunca o conceito de "aprender jogando" fez tanto sentido! Aqui poderás apreender código por meio de jogos e outras ferramentas interativas, que te irão auxiliar a apreender de forma fácil e lógica.</p>
+          	  <p class="text">Nunca o conceito de "aprender jogando" fez tanto sentido! Aqui poderás aprender código por meio de jogos e outras ferramentas interativas, que te irão auxiliar a aprender de forma fácil e lógica.</p>
               </div>
       		</div>
       	</div>
@@ -104,17 +104,17 @@
  </section>
 
  <!--Photos Part-->
- <section id="photos" class="category" style="background-color: darkgreen;">
+ <section id="photos" class="category">
  	<h1 class="title">Sessões Anteriores</h1>
  </section>
 
  <!--Portoio Part-->
- <section id="portoio" class="category" style="background-color: skyblue;">
+ <section id="portoio" class="category">
  	<h1 class="title">Espaço</h1>
  </section>
 
  <!--Portoio Part-->
- <section id="contact" class="category" style="background-color: darkgoldenrod;">
+ <section id="contact" class="category">
  	<h1 class="title">Contactos</h1>
  </section>
 
