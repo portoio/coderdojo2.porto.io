@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+	font-family: Roboto;
+	src:url('../fonts/roboto/Roboto-Regular.woff');
+}
+@font-face {
+	font-family: Roboto;
+	src:url('../fonts/roboto/Roboto-Bold.woff');
+	font-weight: bold;
+}
 
 html, body{
 	height: 100%;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .dojo-logo {
@@ -30,7 +37,7 @@ nav ul a{
   background-position: center;
   top: 0;
   left: 0;
-  margin-top: -64px; 
+  margin-top: -64px;
 }
 
 #section_about{
@@ -62,11 +69,13 @@ nav ul a{
 .title{
 	margin-top: 0;
 	padding-top: 94px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 
 .second_title{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 	margin-bottom: 55px;
 }
 
@@ -75,7 +84,14 @@ nav ul a{
 }
 
 .text{
+	margin-top: -4px;
 	font-size: 18px;
+	font-family: 'Open Sans';
+}
+
+.intro_text {
+	font-size: 20px;
+	font-family: 'Roboto';
 }
 
 .justify{
@@ -88,21 +104,26 @@ nav ul a{
    	moz-border-radius: 100% !important;
 }
 
-.icon{
-	background-color: #FFF;
+.btn_icon{
     height: 70px;
     width: 70px;
-    display: inline-block;
-    margin-bottom: 13px;
+	cursor: default !important;
 }
 
-i.medium{
+.btn_text{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 36px !important;
+}
+/*i.medium{
 	font-size: 53px;
 }
 
 i{
 	color: #21C8CE;
-}
+}*/
 
 /*Properties for the logo*/
 
@@ -110,7 +131,7 @@ i{
 	.dojo-text-logo{
 		height: 525px;
 	}
-	
+
 	.logo_and_slogan{
 		top: 52%;
 	}
@@ -120,7 +141,7 @@ i{
 	.dojo-text-logo{
 		height: 425px;
 	}
-	
+
 	.logo_and_slogan{
 		top: 53%;
 	}
@@ -130,11 +151,11 @@ i{
 	.dojo-text-logo{
 		height: 325px;
 	}
-	
+
 	.logo_and_slogan{
 		top: 54%;
 	}
-	
+
 	.text_slogan{
 		font-size: 1.46rem;
 	}
@@ -144,12 +165,24 @@ i{
 	.dojo-text-logo{
 		height: 225px;
 	}
-	
+
 	.logo_and_slogan{
 		top: 55%;
 	}
-	
+
 	.text_slogan{
 		font-size: 1.23rem;
 	}
+}
+
+/* Typed.js */
+.small_description {
+	font-size: 24px;
+	font-family: monospace;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.typed-cursor {
+	opacity: 0;
 }
