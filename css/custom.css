@@ -131,6 +131,19 @@ nav ul a{
 	transform: translate(-50%, -50%);
 	font-size: 36px !important;
 }
+
+.organizer_photo {
+	border-radius: 100%;
+	border: 2px solid #fff;
+	height: 150px;
+}
+
+.organizer_name {
+	display: block;
+	font-family: 'Roboto';
+	font-size: 30px;
+	color: #fff;
+}
 /*i.medium{
 	font-size: 53px;
 }

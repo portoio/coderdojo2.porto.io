@@ -9,5 +9,8 @@ Site do CoderDojo Porto.
  * Fazer com que o botão do canto superior direito, mova sempre para o <div> abaixo (js)
  * Fazer com que o logo/slogan se adaptem a diferentes tamanhos (funciona parcialmente)
  * Api de fotos
+ * Adicionar fotos dos organizadores
+ * Mudar o sistema de grid
+ * Fazer com que o mapa tenha uma altura de acordo com o tamanho do ecrã
 
  [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
