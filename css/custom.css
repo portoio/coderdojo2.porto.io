@@ -1,216 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@font-face {
-	font-family: Roboto;
-	src:url('../fonts/roboto/Roboto-Regular.woff');
-}
-@font-face {
-	font-family: Roboto;
-	src:url('../fonts/roboto/Roboto-Bold.woff');
-	font-weight: bold;
-}
-
 html, body{
-	height: 100%;
-	font-family: 'Roboto', sans-serif;
-	background:
-		linear-gradient(
-			rgba(76, 207, 224, 0.45),
-			rgba(76, 207, 224, 0.45)
-		),
-		url("../img/test_background.jpg");
+  background:
+  linear-gradient(
+    rgba(46, 123, 166, 0.6),
+    rgba(46, 123, 166, 0.6)
+  ),
+  url("../img/test_background.jpg");
 	background-position: center;
 	background-attachment: fixed;
 }
 
-.dojo-logo {
-  margin-top: 4px;
+/* INDEX ELEMENTS [START] */
+.sidebar {
+  display: table;
+  height: 100%;
+  right: 20px;
+  z-index: 10;
+  position: fixed;
 }
 
-nav ul a{
-	font-size: 17px;
-	padding: 0 25px;
-	font-family: 'Montserrat', sans-serif;
+.sidebar_wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#index {
-  min-height: 100%;
+.sidebar_icon {
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  /* When hovered */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.sidebar_icon:hover {
+  color: #44CCFF;
+}
+
+.separator {
+  margin: 20px;
+}
+
+.logo_image {
+  min-width: 400px;
+  width: 25%;
+}
+/* INDEX ELEMENTS [END] */
+
+
+
+/* ABOUT ELEMENTS [START] */
+.about_grid {
   width: 100%;
-  padding: 0px;
-  top: 0;
-  left: 0;
-  margin-top: -64px;
 }
 
-#section_about{
-	background-color: rgba(2, 15, 28, 0.3);
-	padding: 20px 0;
+.description_title {
+  color: #fff;
+  font-weight: bold;
 }
 
-.category{
-	background-color: rgba(2, 15, 28, 0.3);
-	height: 100%;
-	text-align: center;
+.description {
+  color: #fff;
 }
 
-.logo_and_slogan {
-  position: relative;
-  top: 51%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.about_icon {
+  font-size: 40px;
+  color: #fff;
 }
 
-.dojo-text-logo{
-	height: 600px;
+.learn {
+  margin-top: 70px;
 }
-
-.text_slogan{
-	margin-top: 0.68rem;
-}
-
-.title{
-	margin-top: 0;
-	padding-top: 94px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #fff;
-}
-
-.second_title{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	margin-bottom: 55px;
-	color: #fff;
-}
-
-.sub_title{
-	margin-top: 0;
-	color: #fff;
-}
-
-.text{
-	margin-top: -4px;
-	font-size: 18px;
-	font-family: 'Open Sans';
-	color: #fff;
-}
-
-.text_link{
-	font-weight: bold;
-	text-decoration: underline;
-	color: #fff;
-}
-
-.intro_text {
-	font-size: 20px;
-	font-family: 'Roboto';
-	color: #fff;
-}
-
-.justify{
-	text-align: justify;
-}
-
-.circle{
-	border-radius: 100% !important;
-	webkit-border-radius: 100% !important;
-   	moz-border-radius: 100% !important;
-}
-
-.btn_icon{
-    height: 70px;
-    width: 70px;
-	cursor: default !important;
-}
-
-.btn_text{
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 36px !important;
-}
-
-.organizer_photo {
-	border-radius: 100%;
-	border: 2px solid #fff;
-	height: 150px;
-}
-
-.organizer_name {
-	display: block;
-	font-family: 'Roboto';
-	font-size: 30px;
-	color: #fff;
-}
-/*i.medium{
-	font-size: 53px;
-}
-
-i{
-	color: #21C8CE;
-}*/
-
-/*Properties for the logo*/
-
-@media (max-height: 825px){
-	.dojo-text-logo{
-		height: 525px;
-	}
-
-	.logo_and_slogan{
-		top: 52%;
-	}
-}
-
-@media (max-height: 725px){
-	.dojo-text-logo{
-		height: 425px;
-	}
-
-	.logo_and_slogan{
-		top: 53%;
-	}
-}
-
-@media (max-height: 625px){
-	.dojo-text-logo{
-		height: 325px;
-	}
-
-	.logo_and_slogan{
-		top: 54%;
-	}
-
-	.text_slogan{
-		font-size: 1.46rem;
-	}
-}
-
-@media (max-height: 525px){
-	.dojo-text-logo{
-		height: 225px;
-	}
-
-	.logo_and_slogan{
-		top: 55%;
-	}
-
-	.text_slogan{
-		font-size: 1.23rem;
-	}
-}
-
-/* Typed.js */
-.small_description {
-	font-size: 24px;
-	font-family: monospace;
-	text-align: center;
-	text-decoration: underline;
-	color: #fff;
-}
-
-.typed-cursor {
-	opacity: 0;
-}
+/* ABOUT ELEMENTS [END] */
