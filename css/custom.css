@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Open+Sans');
+
 html, body{
   background:
   linear-gradient(
@@ -5,17 +7,25 @@ html, body{
     rgba(46, 123, 166, 0.6)
   ),
   url("../img/test_background.jpg");
-	background-position: center;
-	background-attachment: fixed;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  padding-right: 40px;
 }
 
 /* INDEX ELEMENTS [START] */
 .sidebar {
   display: table;
   height: 100%;
-  right: 20px;
+  right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
   z-index: 10;
   position: fixed;
+  background-color: #fff;
+  border-left: 2px solid #44CCFF;
 }
 
 .sidebar_wrapper {
@@ -24,7 +34,7 @@ html, body{
 }
 
 .sidebar_icon {
-  color: #fff;
+  color: #7fd6f6;
   font-size: 40px;
   display: block;
   /* When hovered */
@@ -52,25 +62,63 @@ html, body{
 
 
 /* ABOUT ELEMENTS [START] */
+.about_hero {
+  background-color: #fff;
+}
+
 .about_grid {
   width: 100%;
 }
 
 .description_title {
-  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  color: #44CCFF;
   font-weight: bold;
 }
 
 .description {
-  color: #fff;
+  color: #44CCFF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about_icon {
   font-size: 40px;
-  color: #fff;
+  color: #44CCFF;
 }
 
 .learn {
   margin-top: 70px;
 }
 /* ABOUT ELEMENTS [END] */
+
+
+
+/* PORTOIO ELEMENTS [START] */
+iframe {
+  border: none;
+  height: 400px;
+  width: 100%;
+}
+
+.portoio_hero {
+  background-color: #44CCFF;
+}
+
+.place_info {
+  line-height: 2px;
+}
+/* PORTOIO ELEMENTS [END] */
+
+
+
+/* CONTACT ELEMENTS [START] */
+.contact_hero {
+  background-color: #35FF69;
+}
+
+.social_icon {
+  font-size: 50px;
+  color: #fff !important;
+  text-decoration: none;
+}
+/* CONTACT ELEMENTS [END] */
