@@ -34,7 +34,6 @@ html, body{
 }
 
 .sidebar_icon {
-  color: #7fd6f6;
   font-size: 40px;
   display: block;
   /* When hovered */
@@ -49,6 +48,14 @@ html, body{
   color: #44CCFF;
 }
 
+.sidebar_color {
+  color: #7fd6f6;
+}
+
+.current_section {
+  color: #4a4a4a;
+}
+
 .separator {
   margin: 20px;
 }
@@ -56,6 +63,10 @@ html, body{
 .logo_image {
   min-width: 400px;
   width: 25%;
+}
+
+.index_footer {
+  color: #fff;
 }
 /* INDEX ELEMENTS [END] */
 

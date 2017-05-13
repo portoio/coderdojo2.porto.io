@@ -9,21 +9,26 @@
 <body>
   <div class="sidebar">
     <div class="sidebar_wrapper">
-      <a href="#index" onclick="scrollTo('index')"><span class="icon-home sidebar_icon"></span></a>
+      <a href="#index" onclick="scrollTo('index')"><span id="index_nav" class="icon-home sidebar_icon sidebar_color"></span></a>
       <div class="separator"></div>
-      <a href="#about" onclick="scrollTo('about')"><span class="icon-dojo sidebar_icon"></span></a>
+      <a href="#about" onclick="scrollTo('about')"><span id="about_nav" class="icon-dojo sidebar_icon sidebar_color"></span></a>
       <div class="separator"></div>
-      <a href="#photos" onclick="scrollTo('photos')"><span class="icon-time sidebar_icon"></span></a>
+      <a href="#photos" onclick="scrollTo('photos')"><span id="photos_nav" class="icon-time sidebar_icon sidebar_color"></span></a>
       <div class="separator"></div>
-      <a href="#portoio" onclick="scrollTo('portoio')"><span class="icon-location sidebar_icon"></span></a>
+      <a href="#portoio" onclick="scrollTo('portoio')"><span id="portoio_nav" class="icon-location sidebar_icon sidebar_color"></span></a>
       <div class="separator"></div>
-      <a href="#contact" onclick="scrollTo('contact')"><span class="icon-message sidebar_icon"></span></a>
+      <a href="#contact" onclick="scrollTo('contact')"><span id="contact_nav" class="icon-message sidebar_icon sidebar_color"></span></a>
     </div>
   </div>
   <section id="index" class="hero is-fullheight">
     <div class="hero-body">
       <div class="container has-text-centered">
         <img class="logo_image" src="img/logo_text.svg">
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="container has-text-centered">
+        <a class="title is-1 index_footer" href="#about" onclick="scrollTo('about')"><i class="icon-chevron"></i></a>
       </div>
     </div>
   </section>
@@ -195,12 +200,12 @@
       </div>
     </div>
   </section>
-  <section id="contact" class="hero is-fullheight contact_hero">
+  <section id="contact" class="hero is-fullheight is-dark contact_hero">
     <div class="hero-body">
       <div class="container has-text-centered">
         <h1 class="description_title title is-1" style="color: #fff; font-weight: bold">Dúvidas? Questões?</h1>
         <p class="description title is-4" style="color: #fff">Sente-te à vontade para nos mandar um email ou uma mensagem no Facebook:</p>
-        <a class="icon-mail social_icon"></a>   <a class="icon-facebook social_icon"></a>
+        <a class="icon-mail social_icon" style="margin-right: 10px;"></a><a class="icon-facebook social_icon"></a>
       </div>
     </div>
   </section>
