@@ -85,6 +85,7 @@ html, body{
   font-family: 'Raleway', sans-serif;
   color: #44CCFF;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .description {
@@ -93,7 +94,7 @@ html, body{
 }
 
 .about_icon {
-  font-size: 40px;
+  font-size: 2rem;
   color: #44CCFF;
 }
 

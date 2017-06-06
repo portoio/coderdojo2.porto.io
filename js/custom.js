@@ -1,9 +1,8 @@
 $('document').ready(function() {
-  if (window.location.hash === "") { // Caso não exista um hash no url
-    $('#index_nav').removeClass('sidebar_color').addClass('current_section')
-  } else { // Caso contrário
-    $(window.location.hash + '_nav').removeClass('sidebar_color').addClass('current_section')
+  if (window.location.hash === '') { // Caso não exista um hash no url
+    window.location.hash = '#index'
   }
+  $(window.location.hash + '_nav').removeClass('sidebar_color').addClass('current_section')
 })
 
 function scrollTo (id) {
