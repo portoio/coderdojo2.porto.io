@@ -106,18 +106,18 @@ html, body{
 
 
 /* PORTOIO ELEMENTS [START] */
-iframe {
-  border: none;
-  height: 400px;
-  width: 100%;
-}
-
 .portoio_hero {
   background-color: #44CCFF;
 }
 
 .place_info {
   line-height: 2px;
+}
+
+#googleMaps{
+	pointer-events: none;
+	height: 400px;
+  	width: 100%;
 }
 /* PORTOIO ELEMENTS [END] */
 
