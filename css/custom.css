@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 html, body{
   background:
@@ -26,6 +28,7 @@ html, body{
   padding-left: 20px;
   z-index: 10;
   position: fixed;
+  -webkit-backface-visibility: hidden;
   background-color: #fff;
   border-left: 2px solid #44CCFF;
 }
@@ -44,6 +47,7 @@ html, body{
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  width: 40px;
 }
 
 .sidebar_icon:hover {
@@ -84,7 +88,7 @@ html, body{
 }
 
 .description_title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #44CCFF;
   font-weight: bold;
   vertical-align: middle;
@@ -136,3 +140,49 @@ html, body{
   text-decoration: none;
 }
 /* CONTACT ELEMENTS [END] */
+
+
+/* @media properties */
+
+@media(max-width: 768px){
+	.sidebar{
+		height: 70px;
+		bottom: 0;
+		width: 100%;
+		border-left: 0;
+		border-top: 2px solid #44CCFF;
+	}
+	
+	.sidebar_wrapper{
+		display: inline-flex;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content: center;
+		height: 70px;
+		width: 100%;
+	}
+	
+	.separator{
+		margin: 0 20px;
+	}
+}
+
+@media(max-width: 425px){
+	.sidebar_icon{
+		font-size: 37px;
+	}
+	
+	.separator{
+		margin: 0 15px;
+	}
+}
+
+@media(max-width: 375px){
+	.sidebar_icon{
+		font-size: 35px;
+	}
+	
+	.separator{
+		margin: 0 10px;
+	}
+}
