@@ -154,6 +154,7 @@ html, body{
 	
 	.sidebar_wrapper{
 		display: inline-flex;
+		-webkit-align-items: center;
 		align-items: center;
 		justify-content: center;
 		height: 70px;
@@ -162,5 +163,25 @@ html, body{
 	
 	.separator{
 		margin: 0 20px;
+	}
+}
+
+@media(max-width: 425px){
+	.sidebar_icon{
+		font-size: 37px;
+	}
+	
+	.separator{
+		margin: 0 15px;
+	}
+}
+
+@media(max-width: 375px){
+	.sidebar_icon{
+		font-size: 35px;
+	}
+	
+	.separator{
+		margin: 0 10px;
 	}
 }
