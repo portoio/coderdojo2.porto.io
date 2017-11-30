@@ -1,220 +1,149 @@
 <!DOCTYPE html>
 <head>
   <title>CoderDojo Porto</title>
-  <link rel="stylesheet" href="css/bulma.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" integrity="sha256-MWBJX/7o3UIX5sMN/izdthod08WoIcWN0HOP7/X8+48=" crossorigin="anonymous" />
   <meta charset="utf-8">
 </head>
 <body>
   <div class="sidebar">
     <div class="sidebar_wrapper">
-      <a href="#index" onclick="scrollTo('index')"><span id="index_nav" class="icon-home sidebar_icon sidebar_color"></span></a>
+      <a data-menuanchor="inicio" href="#inicio" onclick="highlight('inicio')">
+        <span id="inicio_nav" class="icon-home sidebar_icon sidebar-color"></span>
+      </a>
       <div class="separator"></div>
-      <a href="#about" onclick="scrollTo('about')"><span id="about_nav" class="icon-dojo sidebar_icon sidebar_color"></span></a>
+      <a data-menuanchor="sobre" href="#sobre" onclick="highlight('sobre')">
+        <span id="sobre_nav" class="icon-dojo sidebar_icon sidebar-color"></span>
+      </a>
       <div class="separator"></div>
-      <a href="#photos" onclick="scrollTo('photos')"><span id="photos_nav" class="icon-time sidebar_icon sidebar_color"></span></a>
+      <a data-menuanchor="organizadores" href="#organizadores" onclick="highlight('organizadores')">
+        <span id="organizadores_nav" class="icon-time sidebar_icon sidebar-color"></span>
+      </a>
       <div class="separator"></div>
-      <a href="#portoio" onclick="scrollTo('portoio')"><span id="portoio_nav" class="icon-location sidebar_icon sidebar_color"></span></a>
+      <a data-menuanchor="localizacao" href="#localizacao" onclick="highlight('localizacao')">
+        <span id="localizacao_nav" class="icon-location sidebar_icon sidebar-color"></span>
+      </a>
       <div class="separator"></div>
-      <a href="#contact" onclick="scrollTo('contact')"><span id="contact_nav" class="icon-message sidebar_icon sidebar_color"></span></a>
+      <a data-menuanchor="contactos" href="#contactos" onclick="highlight('contactos')">
+        <span id="contactos_nav" class="icon-message sidebar_icon sidebar-color"></span>
+      </a>
     </div>
   </div>
-  <section id="index" class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <img class="logo_image" src="img/logo_text.svg">
+  <div id="fullpage">
+    <!-- Index - Primeira secção -->
+    <div id="index" class="section" data-archor="inicio">
+      <div class="container">
+        <img class="logo-image" src="img/logo_text.svg">
       </div>
     </div>
-    <div class="hero-foot">
-      <div class="container has-text-centered">
-        <a class="title is-1 index_footer" href="#about" onclick="scrollTo('about')"><i class="icon-chevron"></i></a>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="hero has-text-centered is-fullheight about_hero">
-    <div class="container">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="description_title title is-1">O que é o CoderDojo?</h1>
-          <h3 class="description title">O CoderDojo é um movimento global que pretende, de forma gratuita e voluntária, ajudar crianças e jovens entre os 7 a 17 anos a aprender a programar.</h3>
 
-          <div class="learn">
-            <h1 class="description_title title is-1">O que é que vou aprender?</h1>
-            <br />
-            <div class="columns">
-              <div class="column">
-                <h3 class="description_title title is-2"><span class="icon-code about_icon"></span> Programar</h3>
-                <br />
-                <h3 class="description_title title is-2"><span class="icon-cog about_icon"></span> Começar com Tecnologia</h3>
-                <br />
-                <h3 class="description_title title is-2"><span class="icon-pacman about_icon"></span> Fazer jogos</h3>
-                <br />
-                <h3 class="description_title title is-2"><span class="icon-happy about_icon"></span> Ensinar e Conhecer</h3>
-              </div>
-              <div class="column">
-                <div class="columns">
-                  <div class="column">
-                    <img src="img/about_img1.jpg" />
-                  </div>
-                  <div class="column">
-                    <img src="img/about_img2.jpg" />
-                  </div>
+    <!-- About - Informações gerais -->
+    <div id="about" class="section about-hero" data-archor="sobre">
+      <div class="container">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">O que é o CoderDojo?</h1>
+            <div class="description-wrapper">
+              <p class="text">O CoderDojo é um movimento global que pretende, de forma gratuita e voluntária, ajudar crianças e jovens entre os 7 a 17 anos a aprender a programar.</p>
+            </div>
+            <div class="learn">
+              <h1 class="title">O que é que vou aprender?</h1>
+              <div class="props">
+                <div class="icon-text">
+                  <span class="icon-code about_icon"></span>
+                  <p class="text">Programar</p>
                 </div>
-                <div class="columns">
-                  <div class="column">
-                    <img src="img/about_img3.jpg" />
-                  </div>
-                  <div class="column">
-                    <img src="img/about_img4.jpg" />
-                  </div>
+                <div class="icon-text">
+                  <span class="icon-cog about_icon"></span>
+                  <p class="text">Começar com Tecnologia</p>
+                </div>
+                <div class="icon-text">
+                  <span class="icon-pacman about_icon"></span>
+                  <p class="text">Fazer jogos</p>
+                </div>
+                <div class="icon-text">
+                  <span class="icon-happy about_icon"></span>
+                  <p class="text">Ensinar e Conhecer</p>
                 </div>
               </div>
+              <div class="images">
+                <img class="display-image" src="img/about_img1.jpg" />
+                <img class="display-image" src="img/about_img4.jpg" />
+                <img class="display-image" src="img/about_img2.jpg" />
+              </div>
+              <div class="images">
+                  <img class="display-image" src="img/about_img3.jpg" />
+                  <img class="display-image" src="img/about_img3.jpg" />
+                  <img class="display-image" src="img/about_img3.jpg" />
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section id="photos" class="hero is-fullheight">
-    <div class="container">
+    <!-- Photos - Fotografias das últimas sessões -->
+    <div id="photos" class="section" data-archor="organizadores">
+      <h1>🤔 Secalhar trocar isto pelos organizadores maybe?</h1>
+    </div>
+    <!-- Portoio - Localização -->
+    <div id="portoio" class="section portoio-hero" data-archor="localizacao">
+      <div class="container">
+        <div class="hero-body">
+          <div class="container">
+            <!-- <span class="icon-location about_icon place" style="font-size: 80px"></span> -->
+            <h1 class="title" style="color: #eff">Onde é o CoderDojo Porto?</h1>
+            <div class="about-hero address">
+              <a href="https://www.google.com/maps?ll=41.147047,-8.614004&z=16&t=m&hl=pt-PT&gl=PT&mapclient=embed&cid=12457545381001472324" target="_blank">
+                <h3 class="text">R. de Cândido dos Reis 81, 4050-152</h3>
+                <h3 class="text">Porto</h3>
+              </a>
+            </div>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.4263533952526!2d-8.616198248725867!3d41.147047179185236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464e2faa75095%3A0xace2178567e6a944!2sPorto+i%2Fo!5e0!3m2!1spt-BR!2spt!4v1458324142317" id="googleMaps"></iframe>
+            </div>
+            <div class="images">
+              <img class="display-image" src="http://porto.io/img/content/chillout.jpg" alt="">
+              <img class="display-image" src="http://porto.io/img/content/kitchen.jpg" alt="">
+              <img class="display-image" src="http://porto.io/img/content/openspace2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact - Contactos -->
+    <div id="contact" class="section contact-hero" data-archor="contactos">
       <div class="hero-body">
         <div class="container">
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Hello World</p>
-                <p class="subtitle">What is up?</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Foo</p>
-                <p class="subtitle">Bar</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Third column</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-              <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child box">
-                    <p class="title">Vertical tiles</p>
-                    <p class="subtitle">Top box</p>
-                  </article>
-                  <article class="tile is-child box">
-                    <p class="title">Vertical tiles</p>
-                    <p class="subtitle">Bottom box</p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Middle box</p>
-                    <p class="subtitle">With an image</p>
-                    <figure class="image is-4by3">
-                      <img src="http://bulma.io/images/placeholders/640x480.png">
-                    </figure>
-                  </article>
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child box">
-                  <p class="title">Wide column</p>
-                  <p class="subtitle">Aligned with the right column</p>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <div class="content">
-                  <p class="title">Tall column</p>
-                  <p class="subtitle">With even more content</p>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                    <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                    <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Side column</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent is-8">
-              <article class="tile is-child box">
-                <p class="title">Main column</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                </div>
-              </article>
-            </div>
+          <h1 class="title" style="color: #eff">Dúvidas? Questões?</h1>
+          <h2 class="text">Sente-te à vontade de nos mandar um email ou uma mensagem no Facebook:</h2>
+          <div class="icons">
+            <a class="icon-mail social_icon" style="margin-right: 10px;" href="mailto:coderdojo@porto.io"></a>
+            <a class="icon-facebook social_icon" href="https://www.facebook.com/CoderDojoPorto" target="_blank"></a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section id="portoio" class="hero is-fullheight portoio_hero">
-    <div class="container">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <!-- <span class="icon-location about_icon place" style="font-size: 80px"></span> -->
-          <h1 class="description_title title is-1" style="color: #fff; font-weight: bold">Onde é o CoderDojo Porto?</h1>
-          <p class="description title is-5" style="color: #fff">O CoderDojo Porto ocorre sempre no Porto i/o Downtown:</p>
-          <h3 class="description title" style="color: #fff">R. de Cândido dos Reis 81, 4050-152</h3>
-          <h3 class="description title" style="color: #fff">Porto</h3>
-          <div id="map">
-          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.4263533952526!2d-8.616198248725867!3d41.147047179185236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464e2faa75095%3A0xace2178567e6a944!2sPorto+i%2Fo!5e0!3m2!1spt-BR!2spt!4v1458324142317" id="googleMaps"></iframe>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <img src="http://porto.io/img/content/chillout.jpg" alt="">
-            </div>
-            <div class="column">
-              <img src="http://porto.io/img/content/kitchen.jpg" alt="">
-            </div>
-            <div class="column">
-              <img src="http://porto.io/img/content/openspace2.jpg" alt="">
-            </div>
-            <div class="column">
-              <img src="http://porto.io/img/content/smallopenspace.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="hero is-fullheight is-dark contact_hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="description_title title is-1" style="color: #fff; font-weight: bold">Dúvidas? Questões?</h1>
-        <p class="description title is-4" style="color: #fff">Sente-te à vontade para nos mandar um email ou uma mensagem no Facebook:</p>
-        <a class="icon-mail social_icon" style="margin-right: 10px;" href="mailto:coderdojo@porto.io"></a><a class="icon-facebook social_icon" href="https://www.facebook.com/CoderDojoPorto"></a>
-      </div>
-    </div>
-  </section>
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/custom.js" charset="utf-8"></script>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js" integrity="sha256-SwWHEBZICAfuD82HWp9i1VmxX0dXjllMm6cNKvucHAY=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+    // Highlight
+    if (window.location.hash === '') { // Caso não exista um hash no url
+      window.location.hash = '#inicio';
+    }
+    $(window.location.hash + '_nav').removeClass('sidebar-color').addClass('current-section');
+
+    // Fullpage.js
+    $('#fullpage').fullpage({
+      anchors: ['inicio', 'sobre', 'organizadores', 'localizacao', 'contactos']
+    });
+  });
+
+  function highlight(id) {
+    $(window.location.hash + '_nav').removeClass('current-section').addClass('sidebar-color');
+    $('#' + id + '_nav').removeClass('sidebar-color').addClass('current-section');
+  }
+  </script>
 </body>

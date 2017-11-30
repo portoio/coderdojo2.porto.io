@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+html, body{
+  background:
+  linear-gradient(
+    rgba(46, 123, 166, 0.6),
+    rgba(46, 123, 166, 0.6)
+    ),
+    url("../img/test_background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+  padding-right: 40px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+a { text-decoration: none; }
+
+/* COLORS */
+.sidebar-color {
+  color: #7fd6f6;
+}
+
+.about-hero {
+  background: #fff;
+  color: #555;
+}
+.portoio-hero {
+  background: #44CCFF;
+  color: #fff;
+}
+
+.contact-hero {
+  background-color: #008080; /* Windows 95 */
+  color: #fff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  display: table;
+  height: 100%;
+  right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 10;
+  position: fixed;
+  background-color: #fff;
+  border-left: 2px solid #44CCFF;
+}
+
+.sidebar_wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sidebar_icon {
+  font-size: 40px;
+  display: block;
+  /* When hovered */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.sidebar_icon:hover {
+  color: #44CCFF;
+}
+
+
+.current-section {
+  color: #4a4a4a;
+}
+
+.separator {
+  margin: 20px;
+}
+
+/* INDEX */
+.logo-image {
+  min-width: 400px;
+  width: 25%;
+  margin: auto;
+  display: block;
+}
+
+/* ABOUT */
+.description-wrapper {
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Ubuntu Mono', Courier, monospace;
+  font-size: 3.2rem;
+  color: #4495ff;
+}
+
+.text {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.props {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+
+.icon-text {
+  display: inline-block;
+  text-align: center;
+}
+
+.images {
+  margin: auto;
+  text-align: center;
+}
+
+.display-image {
+  max-width: 600px;
+  max-height: 200px;
+}
+
+.about_icon {
+  font-size: 2rem;
+  color: #44CCFF;
+}
+
+.learn {
+  margin-top: 70px;
+}
+
+/* PORTOIO */
+.address {
+  width: 360px;
+  line-height: 0px;
+  margin: auto;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#map { margin-top: 15px; }
+
+#googleMaps{
+	height: 400px;
+  width: 100%;
+}
+
+/* CONTACT */
+.icons {
+  text-align: center;
+}
+
+.social_icon {
+  font-size: 50px;
+  color: #fff !important;
+  text-decoration: none;
+}
