@@ -9,23 +9,23 @@
 <body>
   <div class="sidebar">
     <div class="sidebar_wrapper">
-      <a data-menuanchor="inicio" href="#inicio" onclick="highlight('inicio')">
+      <a data-menuanchor="inicio" href="#inicio">
         <span id="inicio_nav" class="icon-home sidebar_icon sidebar-color"></span>
       </a>
       <div class="separator"></div>
-      <a data-menuanchor="sobre" href="#sobre" onclick="highlight('sobre')">
+      <a data-menuanchor="sobre" href="#sobre">
         <span id="sobre_nav" class="icon-dojo sidebar_icon sidebar-color"></span>
       </a>
       <div class="separator"></div>
-      <a data-menuanchor="organizadores" href="#organizadores" onclick="highlight('organizadores')">
+      <a data-menuanchor="organizadores" href="#organizadores">
         <span id="organizadores_nav" class="icon-time sidebar_icon sidebar-color"></span>
       </a>
       <div class="separator"></div>
-      <a data-menuanchor="localizacao" href="#localizacao" onclick="highlight('localizacao')">
+      <a data-menuanchor="localizacao" href="#localizacao">
         <span id="localizacao_nav" class="icon-location sidebar_icon sidebar-color"></span>
       </a>
       <div class="separator"></div>
-      <a data-menuanchor="contactos" href="#contactos" onclick="highlight('contactos')">
+      <a data-menuanchor="contactos" href="#contactos">
         <span id="contactos_nav" class="icon-message sidebar_icon sidebar-color"></span>
       </a>
     </div>
@@ -128,22 +128,26 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js" integrity="sha256-SwWHEBZICAfuD82HWp9i1VmxX0dXjllMm6cNKvucHAY=" crossorigin="anonymous"></script>
   <script>
-  $(document).ready(function() {
-    // Highlight
-    if (window.location.hash === '') { // Caso não exista um hash no url
-      window.location.hash = '#inicio';
-    }
-    $(window.location.hash + '_nav').removeClass('sidebar-color').addClass('current-section');
+    var anchors = ['inicio', 'sobre', 'organizadores', 'localizacao', 'contactos'];
+    $(document).ready(function() {
+      // Highlight
+      if (window.location.hash === '') { // Caso não exista um hash no url
+        window.location.hash = '#inicio';
+      }
+      $(window.location.hash + '_nav').removeClass('sidebar-color').addClass('current-section');
 
-    // Fullpage.js
-    $('#fullpage').fullpage({
-      anchors: ['inicio', 'sobre', 'organizadores', 'localizacao', 'contactos']
+      // Fullpage.js
+      $('#fullpage').fullpage({
+        anchors: anchors,
+        onLeave: function(index, nextIndex, direction){
+          $('#' + anchors[index - 1] + '_nav').removeClass('current-section').addClass('sidebar-color');
+          $('#' + anchors[nextIndex - 1] + '_nav').removeClass('sidebar-color').addClass('current-section');
+        }
+      });
     });
-  });
 
-  function highlight(id) {
-    $(window.location.hash + '_nav').removeClass('current-section').addClass('sidebar-color');
-    $('#' + id + '_nav').removeClass('sidebar-color').addClass('current-section');
-  }
+    function highlight(id) {
+      
+    }
   </script>
 </body>
